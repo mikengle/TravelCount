@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TravelCount.Contracts.Persistence
 {
-    public interface ITravel: IIdentifiyable,ICopyable<ITravel>
+    public interface ITravel: IIdentifiable,ICopyable<ITravel>
     {
         public string Designation { get; set; }
         public string Description { get; set; }

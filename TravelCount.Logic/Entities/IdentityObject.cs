@@ -9,7 +9,7 @@ namespace TravelCount.Logic.Entities
 
     [Serializable]
 
-    internal abstract class IdentityObject : Contracts.IIdentifiyable
+    internal abstract class IdentityObject : Contracts.IIdentifiable
 
     {
         public int Id { get; set; }

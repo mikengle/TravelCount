@@ -10,7 +10,7 @@ namespace TravelCount.Contracts.Client
     /// <typeparam name="T">Type, which the basic operations relate.</typeparam>
 
     public partial interface IControllerAccess<T> : IDisposable
-        where T : IIdentifiyable
+        where T : IIdentifiable
     {
         #region Async-Methods
 

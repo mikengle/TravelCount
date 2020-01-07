@@ -2,7 +2,7 @@
 
 namespace TravelCount.Contracts.Persistence
 {
-    public interface IExpense : IIdentifiyable, ICopyable<IExpense>
+    public interface IExpense : IIdentifiable, ICopyable<IExpense>
     {
         public int TravelId { get; set; }
         public DateTime Date { get; set; }
