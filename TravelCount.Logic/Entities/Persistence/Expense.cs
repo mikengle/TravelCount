@@ -1,7 +1,5 @@
 ﻿using CommonBase.Extensions;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using TravelCount.Contracts.Persistence;
 
 namespace TravelCount.Logic.Entities.Persistence
@@ -23,7 +21,8 @@ namespace TravelCount.Logic.Entities.Persistence
             Description = other.Description;
             Amount = other.Amount;
             Friend = other.Friend;
-
         }
+
+        public Travel Travel { get; set; }
     }
 }
