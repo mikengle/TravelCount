@@ -3,6 +3,9 @@
 Das ist die erste Zeile.  
 Das ist die zweite Zeile. 
 
+## Ein Bild  
+![Ein Bild](logo.png)
+
 ## Überschrift 2
 
 Das ist eine lange Zeile mit viel Text und diese soll automatisch umgebrochen werden  
