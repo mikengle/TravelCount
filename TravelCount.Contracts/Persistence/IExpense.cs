@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TravelCount.Contracts.Persistence
 {
-    public interface IExpense
+    public interface IExpense : IIdentifiyable, ICopyable<IExpense>
     {
         public int TravelId { get; set; }
         public DateTime Date { get; set; }
