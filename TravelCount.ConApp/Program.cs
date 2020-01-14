@@ -13,12 +13,24 @@ namespace TravelCount.ConApp
 
             var travel = await ctrlTravel.CreateAsync();
 
-            travel.Designation = "Manchester 2020";
+            travel.Designation = "Karibik 2020";
             travel.Category = "Reisen";
             travel.Currency = "EUR";
-            travel.Friends = "Gerhard;Robert";
+            travel.Friends = "Michi,Flo";
             travel = await ctrlTravel.InsertAsync(travel);
             await ctrlTravel.SaveChangesAsync();
+
+            using var ctrlExpense = Logic.Factory.CreateExpenseController(ctrlTravel);
+
+            var expense = await ctrlExpense.CreateAsync();
+            expense.TravelId = travel.Id;
+            // expense.Date = DateTime.Now;
+            expense.Amount = 100;
+            expense.Description = "Essen";
+            expense.Friend = "Flo;Michi";
+            expense = await ctrlExpense.InsertAsync(expense);
+            await ctrlExpense.SaveChangesAsync();
+
         }
     }
 }

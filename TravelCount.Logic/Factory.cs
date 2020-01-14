@@ -22,14 +22,7 @@ namespace TravelCount.Logic
             {
                 result = new DataContext.DB.DBTravelCountContext();
             }
-            //else if (Persistence == PersistenceType.Csv)
-            //{
-            //    result = new DataContext.Csv.CsvTravelCountContext();
-            //}
-            //else if (Persistence == PersistenceType.Ser)
-            //{
-            //    result = new DataContext.Ser.SerTravelCountContext();
-            //}
+
             return result;
         }
 
