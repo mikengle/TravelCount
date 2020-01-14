@@ -42,6 +42,32 @@ namespace TravelCount.Logic.DataContext.DB
                 .Property(p => p.Designation)
                 .IsRequired()
                 .HasMaxLength(256);
+            modelBuilder.Entity<Travel>()
+                .Property(p => p.Description)
+                .HasMaxLength(256);
+            modelBuilder.Entity<Travel>()
+                .Property(p => p.Currency)
+                .IsRequired()
+                .HasMaxLength(10);
+            modelBuilder.Entity<Travel>()
+                .Property(p => p.Category)
+                .IsRequired()
+                .HasMaxLength(64);
+            modelBuilder.Entity<Travel>()
+                .Property(p => p.Friends)
+                .IsRequired()
+                .HasMaxLength(1024);
+            modelBuilder.Entity<Expense>()
+                .ToTable(nameof(Expense))
+                .HasKey(p => p.Id);
+            modelBuilder.Entity<Expense>()
+                .Property(p => p.Description)
+                .IsRequired()
+                .HasMaxLength(128);
+            modelBuilder.Entity<Expense>()
+                .Property(p => p.Friend)
+                .IsRequired()
+                .HasMaxLength(25);
         }
         #endregion Configuration
 
