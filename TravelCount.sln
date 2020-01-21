@@ -3,18 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelCount.Logic", "TravelCount.Logic\TravelCount.Logic.csproj", "{F3CB672E-93FB-424B-8A40-3596A8F59813}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelCount.Logic", "TravelCount.Logic\TravelCount.Logic.csproj", "{F3CB672E-93FB-424B-8A40-3596A8F59813}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelCount.Contracts", "TravelCount.Contracts\TravelCount.Contracts.csproj", "{3DD93771-DCD6-4803-91D9-7ADE7A89F9BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelCount.Contracts", "TravelCount.Contracts\TravelCount.Contracts.csproj", "{3DD93771-DCD6-4803-91D9-7ADE7A89F9BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonBase", "CommonBase\CommonBase.csproj", "{382BAC69-FFC3-4EAD-A304-08720FB7DFA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonBase", "CommonBase\CommonBase.csproj", "{382BAC69-FFC3-4EAD-A304-08720FB7DFA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelCount.ConApp", "TravelCount.ConApp\TravelCount.ConApp.csproj", "{26EED172-F765-4781-AA05-E7F161B91033}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelCount.ConApp", "TravelCount.ConApp\TravelCount.ConApp.csproj", "{26EED172-F765-4781-AA05-E7F161B91033}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6C63863C-8C9E-4A99-97B7-822226982BEA}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelCount.WebApi", "TravelCount.WebApi\TravelCount.WebApi.csproj", "{4997118A-205C-4C84-900A-6152DFA66596}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelCount.Transfer", "TravelCount.Transfer\TravelCount.Transfer.csproj", "{315CF6C1-421D-4A9D-B374-2275B4C9424E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +42,14 @@ Global
 		{26EED172-F765-4781-AA05-E7F161B91033}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26EED172-F765-4781-AA05-E7F161B91033}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26EED172-F765-4781-AA05-E7F161B91033}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4997118A-205C-4C84-900A-6152DFA66596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4997118A-205C-4C84-900A-6152DFA66596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4997118A-205C-4C84-900A-6152DFA66596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4997118A-205C-4C84-900A-6152DFA66596}.Release|Any CPU.Build.0 = Release|Any CPU
+		{315CF6C1-421D-4A9D-B374-2275B4C9424E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{315CF6C1-421D-4A9D-B374-2275B4C9424E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{315CF6C1-421D-4A9D-B374-2275B4C9424E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{315CF6C1-421D-4A9D-B374-2275B4C9424E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
